@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import font
-# from tkinter import messagebox
+from tkinter import messagebox
 
 root = Tk()
 
@@ -13,6 +13,11 @@ def login():
 def signup():
     root.destroy()
     from screens import signup_screen
+
+
+def group_message():
+    messagebox.showinfo("Message from Admin",
+                        "Attention all users: We've successfully updated our inventory management system! Enjoy smoother operations and enhanced efficiency. Happy managing!")
 
 
 root.title("Stock Panda")
@@ -40,8 +45,13 @@ textlogo = PhotoImage(file="assets/textlogo.png")
 logoDispaly = Label(root, image=textlogo, bg="#8A908B")
 logoDispaly.place(x=30, y=20)
 
+# for hero button
+Hero_button = Button(root, image=textlogo,
+                     command=group_message, cursor='hand2', bg='#8A908B')
+Hero_button.place(x=30, y=20)
+
 # for hero text
-Label(root, text="Stock Panda", bg="#8A908B", font=(
+Label(root, text="Stock Panda",  bg="#8A908B", font=(
     "Arial", 30, "bold"), fg="white").place(x=30, y=290)
 Label(root, text="Some Description about the software", bg="#8A908B", font=("Arial", 20, "bold"), fg="white").place(
     x=30, y=340)
