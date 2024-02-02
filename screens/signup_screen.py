@@ -9,7 +9,6 @@ root.maxsize(height=700, width=1100)
 root.minsize(height=700, width=1100)
 
 
-
 # creating a icon path
 icon_path = "assets/stockpanda1.ico"
 
@@ -141,12 +140,12 @@ eye_label_2.bind("<Button-1>", lambda event: confirm_password_visibility())
 
 
 # for login button
-login = Button(container, text="Log in", height=1, width=22,
+login = Button(container, text="Create account", height=1, cursor='hand2', width=22,
                border=0, bg="#FF5252", fg="white", font=customButtonFont)
 login.place(x=96, y=520)
 
 # already have an account button
-signUp = Button(container, text="Already have an account", border=0, fg="blue", bg="#D9D9D9", font=1,
+signUp = Button(container, text="Already have an account", cursor='hand2', border=0, fg="blue", bg="#D9D9D9", font=1,
                 command=alreadyHaveAccount)
 signUp.place(x=130, y=650)
 

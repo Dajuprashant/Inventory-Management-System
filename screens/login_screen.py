@@ -116,15 +116,13 @@ login.place(x=96, y=540)
 
 # for forgot password button
 forgotPass = Button(container, text="Forgot password?",
-                    border=0, fg="blue", bg="#D9D9D9")
+                    border=0, fg="blue", cursor='hand2', bg="#D9D9D9")
 forgotPass.place(x=290, y=415)
 
 # create new account button
-signUp = Button(container, text="Create an account", border=0,
+signUp = Button(container, text="Create an account", cursor='hand2', border=0,
                 fg="blue", bg="#D9D9D9", font=1, command=createAccount)
 signUp.place(x=160, y=650)
-
-
 
 
 root.mainloop()
